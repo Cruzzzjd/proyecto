@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="525.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+    <!-- Fondo con la imagen -->
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../../Downloads/sunrise-bali-jungle.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- Encabezado -->
+        <HBox layoutX="20.0" layoutY="20.0" spacing="20">
+            <children>
+                <!-- Logotipo -->
+                <ImageView fitHeight="50.0" fitWidth="50.0">
+                    <image>
+                  <Image url="@../../../../../../../../../Downloads/pine-trees.png" />
+                    </image>
+                </ImageView>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: black;" text="MOSTRAR" />
+            </children>
+        </HBox>
+
+        <!-- Contenedor de filtros -->
+        <VBox layoutX="50.0" layoutY="100.0" spacing="15" style="-fx-border-color: White; -fx-border-width: 2; -fx-padding: 20;">
+            <children>
+                <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Filtros" />
+                <TextField promptText="Propietario" />
+                <TextField promptText="Estado de aprobación" />
+                <Button style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Eliminar" />
+                <Button style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Actualizar/Editar" />
+                <Button style="-fx-background-color: #1E90FF; -fx-text-fill: white;" text="Agregar" />
+            </children>
+        </VBox>
+
+        <!-- Tabla de datos -->
+        <VBox layoutX="300.0" layoutY="100.0" spacing="10">
+            <children>
+                <TableView>
+                    <columns>
+                        <TableColumn text="Propietario" />
+                        <TableColumn text="Terreno" />
+                        <TableColumn text="Fechas" />
+                        <TableColumn text="Área" />
+                        <TableColumn text="Estado de aprobación" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+          <Label layoutX="300.0" layoutY="70.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="LISTADO DE ÁREAS DE VIDA" />
+    </children>
+</AnchorPane>

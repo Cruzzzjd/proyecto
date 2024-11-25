@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <!-- Fondo con la imagen -->
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="907.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Downloads/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand.jpg" />
+         </image></ImageView>
+
+        <!-- Encabezado -->
+        <HBox layoutX="20.0" layoutY="20.0" spacing="20">
+            <children>
+                <!-- Logotipo -->
+                <ImageView fitHeight="50.0" fitWidth="50.0">
+                    <image>
+                  <Image url="@../../../../../../../../../Downloads/pine-trees.png" />
+                    </image>
+                </ImageView>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: black;" text="ÁREAS DE VIDA" />
+            </children>
+        </HBox>
+
+        <!-- Botones de navegación -->
+        <HBox layoutX="561.0" layoutY="20.0" prefHeight="23.0" prefWidth="291.0" spacing="20">
+            <children>
+                <Button style="-fx-background-color: transparent; -fx-text-fill: black;" text="Crear" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: black;" text="Eliminar" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: black;" text="Editar" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: black;" text="Mostrar" />
+            </children>
+        </HBox>
+
+        <!-- Contenedor de texto principal -->
+        <VBox layoutX="50.0" layoutY="150.0" prefHeight="223.0" prefWidth="398.0" spacing="20" style="-fx-border-color: purple; -fx-border-width: 2; -fx-padding: 20;">
+            <children>
+                <Label style="-fx-font-size: 28px; -fx-font-weight: bold;" text="Bienvenido a Áreas de Vida." />
+                <Text text="Este proyecto busca facilitar la restauración y conservación ecológica mediante la administración integral de áreas de vida. Aquí podrá gestionar registros de terrenos, propietarios, autoridades ambientales, programas de siembra y especies arbóreas, contribuyendo al cumplimiento de los objetivos de restauración ambiental y protección de la biodiversidad." wrappingWidth="369.60003662109375" />
+            </children>
+        </VBox>
+
+        <!-- Imagen decorativa -->
+        <ImageView fitHeight="200.0" fitWidth="205.0" layoutX="616.0" layoutY="158.0">
+            <image>
+                <Image url="@../../../../../../../../../Downloads/save-nature.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

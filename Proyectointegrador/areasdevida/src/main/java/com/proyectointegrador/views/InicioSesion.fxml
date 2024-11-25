@@ -10,7 +10,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #87CEEB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #87CEEB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.proyectointegrador.controllers.InicioSesionController"
+>
     <!-- Fondo con la imagen -->
     <children>
         <ImageView fitHeight="570.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
